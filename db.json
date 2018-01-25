@@ -1,0 +1,36 @@
+{
+  "devices": [
+    {
+      "id": 1,
+      "product_name": "IPHONE 6 PLUS 128GB GOLD",
+      "imei": "354581268954542",
+      "costumerId": 1
+    },
+    {
+      "id": 2,
+      "product_name": "IPHONE 6 PLUS 32GB SILVER",
+      "imei": "354581268954343",
+      "costumerId": 2
+    },
+    {
+      "costumerId": 1,
+      "product_name": "IPHONE 7 128GB RED",
+      "imei": "354895745758955",
+      "id": 3
+    }
+  ],
+  "costumers": [
+    {
+      "id": 1,
+      "name": "Zé Doido",
+      "telephone_number": "83-98292-3492",
+      "email": "ze@doido.com.br"
+    },
+    {
+      "id": 2,
+      "name": "Bartolomeu",
+      "telephone_number": "81-97728-2202",
+      "email": "bartolomeu@junior.com.br"
+    }
+  ]
+}
