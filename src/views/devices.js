@@ -20,14 +20,14 @@ export const DeviceList = (props) => (
             small={
                 <SimpleList
                     primaryText={record => record.id}
-                    secondaryText={record => record.product_name}
+                    secondaryText={record => record.productName}
                     tertiaryText={record => record.imei}
                 />
             }
             medium={
                 <Datagrid>
                     <TextField source="id" />
-                    <TextField source="product_name" />
+                    <TextField source="productName" />
                     <ReferenceField source="costumerId"
                         label="Owner" reference="costumers">
                         <TextField source="name" />
@@ -41,7 +41,7 @@ export const DeviceList = (props) => (
 );
 
 const DeviceTitle = ({record}) => {
-    return <span>Device {record ? `"${record.product_name}"` : ''}</span>;
+    return <span>Device {record ? `"${record.productName}"` : ''}</span>;
 };
 
 export const DeviceEdit = (props) => (
@@ -52,7 +52,7 @@ export const DeviceEdit = (props) => (
                 label="Owner" reference="costumers">
                 <SelectInput optionText="name" />
             </ReferenceInput>
-            <TextInput source="product_name" />
+            <TextInput source="productName" />
             <TextInput source="imei" />
         </SimpleForm>
     </Edit>
@@ -65,7 +65,7 @@ export const DeviceCreate = (props) => (
                 label="Owner" reference="costumers" allowEmpty>
                 <SelectInput optionText="name" />
             </ReferenceInput>
-            <TextInput source="product_name" />
+            <TextInput source="productName" />
             <TextInput source="imei" />
         </SimpleForm>
     </Create>

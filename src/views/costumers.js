@@ -23,7 +23,7 @@ export const CostumerList = (props) => (
                 <Datagrid>
                     <TextField source="id" />
                     <TextField source="name" />
-                    <TextField source="telephone_number" />
+                    <TextField source="telephoneNumber" />
                     <EmailField source="email" />
                     <EditButton />
                 </Datagrid>
@@ -33,7 +33,7 @@ export const CostumerList = (props) => (
 );
 
 const CostumerTitle = ({record}) => {
-    return <span>Costumer {record ? `"${record.product_name}"` : ''}</span>;
+    return <span>Costumer {record ? `"${record.productName}"` : ''}</span>;
 };
 
 export const CostumerEdit = (props) => (
@@ -41,7 +41,7 @@ export const CostumerEdit = (props) => (
         <SimpleForm>
             <DisabledInput source="id"/>
             <TextInput source="name" />
-            <TextInput source="telephone_number" />
+            <TextInput source="telephoneNumber" />
             <TextInput source="email" />
         </SimpleForm>
     </Edit>
@@ -51,7 +51,7 @@ export const CostumerCreate = (props) => (
     <Create {...props}>
         <SimpleForm>
             <TextInput source="name" />
-            <TextInput source="telephone_number" />
+            <TextInput source="telephoneNumber" />
             <TextInput source="email" />
         </SimpleForm>
     </Create>
